@@ -1,0 +1,96 @@
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: arial;
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    height: 650px;
+}
+
+.box h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.box span {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.type-button input {
+    display: flex;
+    height: 35px;
+    width: 500px;
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.button button {
+    display: flex;
+    width: 130px;
+    margin-left: 5px;
+    height: 40px;
+    align-items: center;
+    background-color: white;
+    color: white;
+    background-color: blueviolet;
+    border-style: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.container-task {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container-task ul {
+    list-style: none;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.container-task ul li {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: cornflowerblue 2px solid;
+}
+
+.container-task ul li input {}
+
+.container-task ul li input[type="checkbox"] {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 2px solid cornflowerblue;
+}
+
+.container-task ul li input[type="checkbox"]+label {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: 600;
+}
