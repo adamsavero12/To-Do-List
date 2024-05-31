@@ -25,7 +25,6 @@ body {
 
 .box span {
     display: flex;
-    margin-bottom: 30px;
     margin-left: 20px;
     font-size: 17px;
     font-weight: 600;
@@ -35,7 +34,7 @@ body {
 .type {
     display: flex;
     justify-content: center;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .type-button input {
@@ -63,34 +62,50 @@ body {
 }
 
 .container-task {
-    display: flex;
-    margin-top: 20px;
+    padding: 20px;
 }
 
-.container-task ul {
+#task-list {
     list-style: none;
-    width: 500px;
-    margin-left: 50px;
+    padding: 0;
 }
 
-.container-task ul li {
-    display: flex;
-    margin-bottom: 15px;
-    border-bottom: cornflowerblue 2px solid;
-}
-
-.container-task ul li input {}
-
-.container-task ul li input[type="checkbox"] {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    border: 2px solid cornflowerblue;
-}
-
-.container-task ul li input[type="checkbox"]+label {
-    display: inline-block;
-    vertical-align: middle;
+#task-list li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
     padding: 10px;
-    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.complete-button,
+.edit-button,
+.delete-button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit-button {
+    background-color: blueviolet;
+}
+
+.delete-button {
+    background-color: blueviolet;
 }
